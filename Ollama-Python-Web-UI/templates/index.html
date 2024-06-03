@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex UI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="settings-btn">&#9776;</button>
+        </div>
+        <div class="chat-box" id="messages"></div>
+        <div class="input-group">
+            <select id="model-select">
+                {% for model in models %}
+                    <option value="{{ model }}">{{ model }}</option>
+                {% endfor %}
+            </select>
+            <input type="text" id="message-input" placeholder="Envoyer un message..." autofocus>
+            <button id="send-button">Envoyer</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
