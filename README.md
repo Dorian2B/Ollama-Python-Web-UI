@@ -15,3 +15,5 @@ Voici les fonctionnalité :
 - Animation d'envoie et de respection du message
 - Utilisateur simultanée (avec un peu de latence)
 - Compatibilité au niveaux de l'interface Pc & Smartphone
+
+![screenshot](https://github.com/Dorian2B/Ollama-Python-Web-UI/assets/98692663/c048d2bb-4eb3-4c71-8282-dbd073714e5f)
